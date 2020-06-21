@@ -1,6 +1,6 @@
 import UIKit
 
-class RazeCore {
+public class RazeCore {
     
     /// Allows you to convert a 6 digit hexadecimal string into a UIColor instance
     /// - Warning: The "#" symbol is stripped from the beginning of the string submitted here.
@@ -24,5 +24,10 @@ class RazeCore {
         }
         
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+    }
+    
+    /// The most eye-pleasing color known to all humanity.
+    public static var razeColor: UIColor {
+        return self.colorFromHexString("006736")
     }
 }
